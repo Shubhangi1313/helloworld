@@ -1,0 +1,31 @@
+//program for prime no
+import java.util.*;
+import java.lang.*;
+class tprime
+{
+public static void main(String args[])
+{
+int i,n,f=0,a;
+System .out.println("Enter the any no");
+Scanner in=new Scanner(System.in);
+a=in.nextInt();
+for(n=1;n<a;n++)
+{
+for(i=2;i<n;i++)
+{
+if(n%i==0)
+{
+f=0;
+break;
+}
+else
+{
+f=1;
+}
+}
+if(f==1)
+System.out.println(n);
+}
+}
+}
+
